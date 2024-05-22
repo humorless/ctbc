@@ -6,6 +6,23 @@ Try running the following commands:
 - dbt run
 - dbt test
 
+### Content of `~/.dbt/profiles.yml`
+
+```
+ctbc:
+  outputs:
+    dev:
+      type: duckdb
+      path: dev.duckdb
+      threads: 1
+
+    prod:
+      type: duckdb
+      path: prod.duckdb
+      threads: 4
+
+  target: dev
+```
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
