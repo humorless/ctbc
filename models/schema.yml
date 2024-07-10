@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: sss
+    schema: sss
+    tables:
+      - name: customers
