@@ -5,3 +5,15 @@ sources:
     schema: sss
     tables:
       - name: customers
+
+models:
+  - name: qqq
+    config:
+      contract:
+        enforced: true
+    constraints:
+      - type: primary_key
+        columns: [id]
+    columns:
+      - name: id
+        data_type: INTEGER
